@@ -113,9 +113,8 @@ label {
     padding: 20px 0px;
   }
   .inputs input {
-    border: solid 2px rgb(15, 223, 15);
     width: 45%;
-    margin: 0 5px;
+    margin: 0 8px;
   }
   .laberName {
     font-size: 16px;

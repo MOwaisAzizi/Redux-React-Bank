@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="containerAll">
-      <h1>🏦 The React-Redux Bank ⚛️</h1>
+      <h1>🏦 The React-Redux Bank</h1>
       <div className="container">{
         fullName === '' ? <CreateCustomer /> :
         <>
