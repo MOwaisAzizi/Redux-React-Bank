@@ -87,18 +87,19 @@ function AccountOperations() {
             value={loanAmount}
             onChange={(e) => setLoanAmount(+e.target.value)}
             placeholder="Loan amount"
+            style={{marginBottom:'3px'}}
           />
          
-          {/* <input
+          <input
             value={loanPurpose}
             onChange={(e) => setLoanPurpose(e.target.value)}
             placeholder="Loan purpose"
-          /> */}
+          /> 
           <button onClick={handleRequestLoan}>Request loan</button>
         </div>
 
        {currentLoan > 0 && <div>
-          <span>Pay back ${currentLoan}({currentLoanPurpose})</span>
+          <span style={{padding:'10px'}}>Pay back ${currentLoan}({currentLoanPurpose})</span>
           <button onClick={handlePayLoan}>Pay loan</button>
         </div>
         }
