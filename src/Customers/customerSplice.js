@@ -10,8 +10,8 @@ const initialState = {
 const customerSlice = createSlice({
   name: "customer",
   initialState,
+  
   reducers: {
-    
     createCustomer: {
       prepare(fullName, nationalID) {
         return {
