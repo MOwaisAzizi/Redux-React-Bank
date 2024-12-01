@@ -46,14 +46,6 @@ const rootReducer = combineReducers({
 })
 const store = createStore(rootReducer)
 
-
-// store.dispatch({type:'acount/deposit', payload : 500})
-// store.dispatch({type:'acount/requestLoan', payload : {amount : 10000,purpose : 'buy a car'},  })
-// console.log(store.getState())
-// store.dispatch({type:'acount/payLoan'  })
-// console.log(store.getState())
-
-
    function deposit(amount){
    return {type:'acount/deposit',payload:amount}
 }
@@ -78,7 +70,6 @@ store.dispatch(requestLoan(150,'bay a car'))
 console.log(store.getState());
 store.dispatch(payloan())
 console.log(store.getState());
-
 
 function createCustomer(fullName,nationalID){
   return {type:'customer/createcustomer' , payload:{fullName,nationalID,createAt:new Date().toDateString()}}

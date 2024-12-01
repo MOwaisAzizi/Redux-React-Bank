@@ -6,7 +6,6 @@ function Customer() {
   const [fullName, setFullName] = useState("");
   const [nationalId, setNationalId] = useState("");
 
-  //using useDispatch we send dispath to store
   const dispatch = useDispatch()
 
   function handleClick() {

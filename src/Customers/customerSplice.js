@@ -1,6 +1,7 @@
 
 import { createSlice } from "@reduxjs/toolkit";
 
+////modern Way
 const initialState = {
   fullName: "",
   nationalID: "",
@@ -10,7 +11,7 @@ const initialState = {
 const customerSlice = createSlice({
   name: "customer",
   initialState,
-  
+  //customer/createCustomer
   reducers: {
     createCustomer: {
       prepare(fullName, nationalID) {
@@ -23,6 +24,7 @@ const customerSlice = createSlice({
         };
       },
       reducer(state, action) {
+        ////TOLKIT WAY
         //with toolkit we mutate the state but not with simple redux
         state.fullName = action.payload.fullName;
         state.nationalID = action.payload.nationalID;
@@ -40,7 +42,7 @@ export const { createCustomer, updateName } = customerSlice.actions;
 export default customerSlice.reducer;
 
 
-
+////clasic way
 // export default function customerReducer(state = initialStateCustomer,action){
 //     switch(action.type){
 //         case 'customer/createcustomer' : return {...state,fullName : 

@@ -18,8 +18,7 @@ function App() {
           <BalanceDisplay />
         </>
 }</div>
-      
-    </div>
+    </div> 
   );
 }
 
